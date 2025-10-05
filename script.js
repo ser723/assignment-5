@@ -114,7 +114,7 @@ function startComputerThinking() {
     // **CALLBACK** for setInterval: Cycles image every 500ms
     thinkingInterval = setInterval(() => {
         const choice = CHOICES[index % CHOICES.length];
-        computerImg.src = `image/${choice}.png`;
+        computerImg.src = `https://ser723.github.io/assignment-5/Image/${choice}.png`;
         index++;
     }, 500); // half a second
 
