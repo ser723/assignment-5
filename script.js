@@ -11,7 +11,7 @@ const CHOICES = ['rock', 'paper', 'scissors'];
 
 // Using the local path from HTML for consistency
 
-const QUESTION_MARK_SRC = `./image/question-mark.png`;
+const QUESTION_MARK_SRC = `./Image/question-mark.png`;
 let playerChoice = null;
 let computerChoice = null;
 let thinkingInterval = null;
@@ -91,7 +91,7 @@ function displayFinalResult() {
     computerChoice = CHOICES[randomIndex];
     
     //Display the final image
-    computerImg.src = `./image/${computerChoice}.png`;
+    computerImg.src = `./Image/${computerChoice}.png`;
 
     //Determine winner and update score
     const result = determineWinner(playerChoice, computerChoice); 
