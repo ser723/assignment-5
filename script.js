@@ -10,7 +10,7 @@ const CHOICES = ['rock', 'paper', 'scissors'];
 
 // Using the local path from HTML for consistency
 
-const QUESTION_MARK_SRC = 'images/question-mark.png'; 
+const QUESTION_MARK_SRC = '/assignment-5/images/question-mark.png';
 let playerChoice = null;
 let computerChoice = null;
 let thinkingInterval = null;
@@ -90,7 +90,7 @@ function displayFinalResult() {
     computerChoice = CHOICES[randomIndex];
     
     //Display the final image
-    computerImg.src = `images/${computerChoice}.png`;
+    computerImg.src = `/assignment-5/images/${computerChoice}.png`;
 
     //Determine winner and update score
     const result = determineWinner(playerChoice, computerChoice); 
@@ -114,7 +114,7 @@ function startComputerThinking() {
     // **CALLBACK** for setInterval: Cycles image every 500ms
     thinkingInterval = setInterval(() => {
         const choice = CHOICES[index % CHOICES.length];
-        computerImg.src = `images/${choice}.png`;
+        computerImg.src = `/assignment-5/images/${choice}.png`;
         index++;
     }, 500); // half a second
 
