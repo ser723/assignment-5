@@ -7,7 +7,7 @@
  */
  
 const CHOICES = ['rock', 'paper', 'scissors'];
-const IMAGE_DIR = 'image/'; //Remember web servers are case-sensitive**
+
 
 // Using the local path from HTML for consistency
 
