@@ -23,8 +23,6 @@ let score = {
 };
 
 // --- DOM Element Selectors ---
-const favoritesSection = document.getElementById('favorites');
-const favoriteList = document.getElementById('favorite-list');
 const playerChoiceImgs = document.querySelectorAll('#player-throw img');
 const computerImg = document.getElementById('computer-choice-img');
 const outcomeMessage = document.getElementById('result-message');
